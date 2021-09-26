@@ -14,5 +14,5 @@ public interface PropertyService {
 
     Property get(int id);
 
-    List list(int cid);
+    List<Property> list(int cid);
 }

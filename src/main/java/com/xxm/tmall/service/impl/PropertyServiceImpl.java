@@ -36,7 +36,7 @@ public class PropertyServiceImpl implements PropertyService {
     }
 
     @Override
-    public List list(int cid) {
+    public List<Property> list(int cid) {
         PropertyExample example = new PropertyExample();
         example.createCriteria().andCidEqualTo(cid); // 专门用来封装自定义查询条件的, andCidEqualTo相当于在sql中拼接一个“AND name=Cid”
         example.setOrderByClause("id desc");

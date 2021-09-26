@@ -49,7 +49,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List list(int cid) {
+    public List<Product> list(int cid) {
         ProductExample example = new ProductExample();
         example.createCriteria().andCidEqualTo(cid);
         example.setOrderByClause("id desc");
