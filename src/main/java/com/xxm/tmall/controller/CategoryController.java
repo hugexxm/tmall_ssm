@@ -30,7 +30,6 @@ public class CategoryController {
 
     @RequestMapping("admin_category_list")
     public String list(Model model, Page page) { // 这个Page参数是如何填充的。因为有个start，自动往里面填充的。因而也会往model里面填充一份。
-        System.out.println(categoryService);
         PageHelper.offsetPage(page.getStart(), page.getCount()); // 只需要在执行DAO操作前执行该语句就行。该语句也可以放在serviceImpl中
         List<Category> cs = categoryService.list();
         int total = (int) new PageInfo<>(cs).getTotal();

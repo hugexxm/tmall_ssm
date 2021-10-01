@@ -10,7 +10,7 @@
     <result column="mobile" jdbcType="VARCHAR" property="mobile" />
     <result column="userMessage" jdbcType="VARCHAR" property="userMessage" />
     <result column="createDate" jdbcType="TIMESTAMP" property="createDate" />
-    <result column="parDate" jdbcType="TIMESTAMP" property="parDate" />
+    <result column="payDate" jdbcType="TIMESTAMP" property="payDate" />
     <result column="deliveryDate" jdbcType="TIMESTAMP" property="deliveryDate" />
     <result column="confirmDate" jdbcType="TIMESTAMP" property="confirmDate" />
     <result column="uid" jdbcType="INTEGER" property="uid" />
@@ -46,7 +46,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, orderCode, address, post, receiver, mobile, userMessage, createDate, parDate, 
+    id, orderCode, address, post, receiver, mobile, userMessage, createDate, payDate,
     deliveryDate, confirmDate, uid, status
   </sql>
   <select id="selectByExample" parameterType="com.xxm.tmall.pojo.OrderExample" resultMap="BaseResultMap">
@@ -77,12 +77,12 @@
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.xxm.tmall.pojo.Order" useGeneratedKeys="true">
     insert into order_ (orderCode, address, post, 
       receiver, mobile, userMessage, 
-      createDate, parDate, deliveryDate, 
+      createDate, payDate, deliveryDate,
       confirmDate, uid, status
       )
     values (#{orderCode,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{post,jdbcType=VARCHAR}, 
       #{receiver,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, #{userMessage,jdbcType=VARCHAR}, 
-      #{createDate,jdbcType=TIMESTAMP}, #{parDate,jdbcType=TIMESTAMP}, #{deliveryDate,jdbcType=TIMESTAMP}, 
+      #{createDate,jdbcType=TIMESTAMP}, #{payDate,jdbcType=TIMESTAMP}, #{deliveryDate,jdbcType=TIMESTAMP},
       #{confirmDate,jdbcType=TIMESTAMP}, #{uid,jdbcType=INTEGER}, #{status,jdbcType=VARCHAR}
       )
   </insert>
@@ -110,8 +110,8 @@
       <if test="createDate != null">
         createDate,
       </if>
-      <if test="parDate != null">
-        parDate,
+      <if test="payDate != null">
+        payDate,
       </if>
       <if test="deliveryDate != null">
         deliveryDate,
@@ -148,8 +148,8 @@
       <if test="createDate != null">
         #{createDate,jdbcType=TIMESTAMP},
       </if>
-      <if test="parDate != null">
-        #{parDate,jdbcType=TIMESTAMP},
+      <if test="payDate != null">
+        #{payDate,jdbcType=TIMESTAMP},
       </if>
       <if test="deliveryDate != null">
         #{deliveryDate,jdbcType=TIMESTAMP},
@@ -189,8 +189,8 @@
       <if test="createDate != null">
         createDate = #{createDate,jdbcType=TIMESTAMP},
       </if>
-      <if test="parDate != null">
-        parDate = #{parDate,jdbcType=TIMESTAMP},
+      <if test="payDate != null">
+        payDate = #{payDate,jdbcType=TIMESTAMP},
       </if>
       <if test="deliveryDate != null">
         deliveryDate = #{deliveryDate,jdbcType=TIMESTAMP},
@@ -216,7 +216,7 @@
       mobile = #{mobile,jdbcType=VARCHAR},
       userMessage = #{userMessage,jdbcType=VARCHAR},
       createDate = #{createDate,jdbcType=TIMESTAMP},
-      parDate = #{parDate,jdbcType=TIMESTAMP},
+      payDate = #{payDate,jdbcType=TIMESTAMP},
       deliveryDate = #{deliveryDate,jdbcType=TIMESTAMP},
       confirmDate = #{confirmDate,jdbcType=TIMESTAMP},
       uid = #{uid,jdbcType=INTEGER},

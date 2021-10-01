@@ -66,4 +66,18 @@ public class PropertyValueServiceImpl implements PropertyValueService {
         }
         return pvs;
     }
+
+    public void initTest(Product p) {
+        // pruduct-->category-->property
+        List<Property> pts = propertyService.list(p.getId()); // 获取该产品下所有的属性
+        for(Property pt : pts) {
+            PropertyValue ptv = get(p.getId(), pt.getId());
+            if(ptv == null) {
+                ptv = new PropertyValue();
+                ptv.setPid(p.getId());
+                ptv.setPtid(pt.getId());
+                propertyValueMapper.insert(ptv);
+            }
+        }
+    }
 }

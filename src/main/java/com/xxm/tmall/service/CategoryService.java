@@ -16,4 +16,9 @@ public interface CategoryService {
     Category get(int id);
 
     void update(Category category);
+
+    void fillProducts(Category category);
+    void fillProductByRow(Category category);
+    void fillProducts(List<Category> cs);
+    void fillProductsByRow(List<Category> cs);
 }
