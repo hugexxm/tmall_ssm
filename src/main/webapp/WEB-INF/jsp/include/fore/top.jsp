@@ -9,6 +9,7 @@
          pageEncoding="UTF-8" isELIgnored="false"%>
 
 <nav class="top ">
+    <%--<a href="${pageContext.request.contextPath}">--%>
     <a href="${contextPath}">
         <span style="color:#C40000;margin:0px" class=" glyphicon glyphicon-home redColor"></span>
         天猫首页

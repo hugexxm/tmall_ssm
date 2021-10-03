@@ -16,4 +16,5 @@ public interface OrderItemService {
     void fill(List<Order> orders);
     void fill(Order order);
     int getSaleCount(int pid);
+    List<OrderItem> listByUser(int uid);
 }

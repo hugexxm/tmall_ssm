@@ -64,7 +64,7 @@ public class OrderItemServiceImpl implements OrderItemService {
         example.createCriteria().andOidEqualTo(order.getId());
         example.setOrderByClause("id desc");
         List<OrderItem> orderItems = orderItemMapper.selectByExample(example);
-        setProduct(orderItems);
+        setProduct(orderItems); // 漂亮
 
         float total = 0;
         int totalNumber = 0;
@@ -88,6 +88,15 @@ public class OrderItemServiceImpl implements OrderItemService {
             count += oi.getNumber();
         }
         return count;
+    }
+
+    @Override
+    public List<OrderItem> listByUser(int uid) { // oid 是 null。表示未结算
+        OrderItemExample example = new OrderItemExample();
+        example.createCriteria().andUidEqualTo(uid).andOidIsNull();
+        List<OrderItem> result = orderItemMapper.selectByExample(example);
+        setProduct(result); // 产品给我上去
+        return result;
     }
 
     // 批处理
