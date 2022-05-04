@@ -4,3 +4,133 @@
 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
 
 z这个是我刚加的
+
+
+
+
+
+  154  git config --list
+  155  git clone https://github.com/hugexxm/tmall_ssm.git
+  156  git clone https://github.com/hugexxm/tmall_ssm.git
+  157  git branch
+  158  ls
+  159  cd tmall_ssm/
+  160  git branch
+  161  git fetch
+  162  git branch -r
+  163  git log
+  164  cd ..
+  165  git clone https://github.com/hugexxm/tmall_ssm.git tmall_1
+  166  ls\
+  167  ls
+  168  cd tmall_1
+  169  git branch
+  170  git branch tmall_1
+  171  git checkout tmall_1
+  172  git status .
+  173  git add .
+  174  git commit -m "tmall1新增了一个文件，内容是 我是新用户 tmall1"
+  175  git push --set-upstream origin origin/tmall1
+  176  git push --set-upstream origin tmall1
+  177  git push --set-upstream origin tmall_1
+  178  git push --set-upstream origin tmall_1
+  179  git push --set-upstream origin tmall_1
+  180  cd ..
+  181  ls
+  182  cd tmall_1
+  183  git branch
+  184  git branch -r
+  185  git status .
+  186  git push --set-upstream origin tmall_1
+  187  git push --set-upstream origin tmall_1
+  188  git push --set-upstream origin tmall_1
+  189  git branch -r
+  190  cd ..
+  191  ls
+  192  cd tmall_ssm
+  193  git branch
+  194  git branch -r
+  195  git branch -a
+  196  git branch -r
+  197  git fetch
+  198  git branch -r
+  199  git fetch
+  200  git checkout origin/tmall_1
+  201  git branch
+  202  git checkout -b other_tmall_1 origin/tmall_1
+  203  git branch
+  204  git config --list
+  205  git config user.name "xuxiaoming"
+  206  git config user.name "timuya"
+  207  git branch -r
+  208  cd ..
+  209  ls
+  210  history
+  211  git clone https://github.com/hugexxm/tmall_ssm.git tmall_1
+  212  git clone https://github.com/hugexxm/tmall_ssm.git tmall_2
+  213  cd tmall_2
+  214  git config user.name "timuya"
+  215  git config user.email "11223344@qq.com"
+  216  git branch
+  217  git branch -r
+  218  git branch -a
+  219  git fetch
+  220  git branch -r
+  221  git branch -a
+  222  git branch -r
+  223  git fetch
+  224  history
+  225  git branch -r
+  226  git checkout -b other_tmall_1 origin/tmall_1
+  227  git fetch
+  228  git checkout -b other_tmall_1 origin/tmall_1
+  229  git checkout -b other_tmall_1 origin/tmall_1
+  230  git checkout -b other_tmall_1 origin/tmall_1
+  231  git config user.name "timuya"
+  232  git config user.emai "760090730@qq.com"
+  233  git checkout -b other_tmall_1 origin/tmall_1
+  234  git branch -r
+  235  git config --list
+  236  git config user.name ""
+  237  git config --list
+  238  git config user.name
+  239  git config user.name "timuya"
+  240  git config user.email 760090730@qq.com
+  241  cd ..
+  242  ls
+  243  ls
+  244  git branch
+  245  git branch -a
+  246  git checkout -b other_tmall_1 origin/tmall_1
+  247  git checkout -b other_tmall_1 origin/tmall_1
+  248  git branch
+  249  cd ..
+  250  ls
+  251  cd tmall_1
+  252  git status .
+  253  git add .
+  254  git commit -m "添加了token信息"
+  255  git push origin tmall_1:tmall_1
+  256  cd ..
+  257  ls
+  258  cd tmall_2
+  259  git branch
+  260  git status .
+  261  git log
+  262  git pull
+  263  ls
+  264  cd tmall.txt
+  265  vi tmall.txt
+  266  git log
+  267  cd ..
+  268  cd tmall_1
+  269  ls
+  270  git branch
+  271  git branch tmall_11
+  272  git branch
+  273  git checkout tmall_11
+  274  git push --set-upstream origin tmall_11
+  275  git push --set-upstream origin tmall_11
+  276  git push --set-upstream origin tmall_11
+  277  git config --list
+  278  git branch
